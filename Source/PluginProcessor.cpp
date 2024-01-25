@@ -166,7 +166,8 @@ bool PFMcompressorV1AudioProcessor::hasEditor() const
 
 juce::AudioProcessorEditor* PFMcompressorV1AudioProcessor::createEditor()
 {
-    return new PFMcompressorV1AudioProcessorEditor (*this);
+    // return new PFMcompressorV1AudioProcessorEditor (*this);
+    return new juce::GenericAudioProcessorEditor(*this);
 }
 
 //==============================================================================
